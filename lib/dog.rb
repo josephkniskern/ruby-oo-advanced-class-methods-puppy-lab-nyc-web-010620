@@ -6,4 +6,7 @@ class Dog
     @name = name
     @@all << self
   end
+
+  def self.print_all
+    @@all.each { |dog| puts dog}
 end
