@@ -3,10 +3,13 @@ require 'pry'
 class Dog
 
   @@all = []
-  binding.pry
   def initialize(name)
     @name = name
     @@all << self
+  end
+
+  def name
+    @name
   end
 
   def self.all
@@ -18,6 +21,6 @@ class Dog
   end
 
   def self.print_all
-
+    @@all.each do |dog|
   end
 end
