@@ -3,18 +3,18 @@ require 'pry'
 class Dog
 
   @@all = []
-  def initialize(name, save)
+  def initialize(name)
     @name = name
-    @save = save
+    save
   end
 
   def name
     @name
   end
 
-  def save
-    @save = save
-  end
+  # def save
+  #   @save = save
+  # end
 
   def self.all
     @@all
